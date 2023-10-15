@@ -11,3 +11,7 @@ print(type(np_height))
 bmi = np_weight / np_height ** 2
 
 print(bmi)
+
+print(bmi > 23.4)
+
+print(bmi[bmi > 24])
