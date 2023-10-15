@@ -10,6 +10,7 @@ def print_user(username, age):
 def power(value, exponent):
     return value ** exponent
 
+
 print_hello_world()
 print_user("jhoward", 32)
 result = power(3, 4)
