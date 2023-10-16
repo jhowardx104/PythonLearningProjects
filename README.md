@@ -16,7 +16,7 @@ Python scratchpads as I learn the language
 - [Pandas Basics](./working-with-pandas.py)
 - [Generators](./working-with-generators.py)
 - [List Comprehension](./working-with-list-comprehension.py)
-- 
+- [Lambda Functions](./working-with-lambda-functions.py)
 
 ## To do:
 
