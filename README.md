@@ -12,12 +12,15 @@ Python scratchpads as I learn the language
 - [Functions](./writing-functions.py)
 - [Classes](./working-with-classes.py)
 - [Modules](./working-with-modules.py)
+- [Numpy Basics](./working-with-numpy.py)
+- [Pandas Basics](./working-with-pandas.py)
+- [Generators](./working-with-generators.py)
+- [List Comprehension](./working-with-list-comprehension.py)
+- 
 
 ## To do:
 
 - Combining modules into a package
-- Numpy Arrays
-- Pandas Basics
 - Advanced Tutorials
 
 Course via [LearnPython](https://www.learnpython.org/)
