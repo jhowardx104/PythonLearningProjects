@@ -26,3 +26,16 @@ def foo(first, second, third, *therest):
 
 
 foo(1, 2, 3, 4, 5, 6)
+
+
+# specify argument by name (unnamed also possible)
+def bar(first, second, third, **options):
+    if options.get('action') == 'sum':
+        print("The sum is: %d" % (first + second + third))
+
+    if options.get('number') == 'first':
+        return first
+
+
+result = bar(1, 2, 3)
+print(result)

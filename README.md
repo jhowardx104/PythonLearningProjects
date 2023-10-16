@@ -22,5 +22,6 @@ Python scratchpads as I learn the language
 
 - Combining modules into a package
 - Advanced Tutorials
+  - finish figuring out named, optional function parameters
 
 Course via [LearnPython](https://www.learnpython.org/)
