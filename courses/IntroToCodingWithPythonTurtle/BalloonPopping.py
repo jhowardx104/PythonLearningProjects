@@ -1,9 +1,7 @@
 from turtle import *
-from random import *
 
-inflations = 0
 current_diameter = 40
-max_diameter = 1000
+max_diameter = 100
 speed(3)
 
 
@@ -13,18 +11,14 @@ def draw_balloon():
 
 
 def inflate_balloon():
-    global current_diameter, inflations
+    global current_diameter
 
-    inflations += 1
-    rand_inflation = randrange(1, 30)
-
-    if current_diameter + rand_inflation >= max_diameter:
+    if current_diameter + 10 >= max_diameter:
         clear()
         current_diameter = 40
         write('POP!')
-        inflations = 0
     else:
-        current_diameter += rand_inflation
+        current_diameter += 10
         draw_balloon()
 
 
