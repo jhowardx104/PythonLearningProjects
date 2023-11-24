@@ -18,3 +18,4 @@ skin_pinch_prompt = ('How fast did color return after a skin pinch test?\n' +
 severe_dehydration = 'Severe dehydration'
 some_dehydration = 'Some dehydration'
 no_dehydration = 'No dehydration'
+closing_application = 'Closing application...'
