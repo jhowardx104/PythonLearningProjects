@@ -1,4 +1,4 @@
-from openai import OpenAI
+from openai import OpenAI, AuthenticationError, BadRequestError
 import json
 import httpx
 import tiktoken
@@ -32,7 +32,9 @@ try:
     response = openai_client.chat.completions.create(model='gpt-3.5-turbo', messages=messages)
     print('Raw response: \n', response)
     print('CTO response: \n', response.choices[0].message.content)
-except Exception:
-    print("an error occurred contacting OpenAI")
+except AuthenticationError:
+    print("an error occurred authenticating with OpenAI")
+except BadRequestError:
+    print("A malformed request was sent to OpenAI")
 
 input()
