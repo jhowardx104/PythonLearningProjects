@@ -152,4 +152,37 @@ What file structure should I use for a new angular project?
 
 ### Getting the Desired Response
 
+#### Assuming an Identity
+
+- Tell the AI to act as a "professional" or expert in a certain field can improve your results.
+  - Example: You are a... senior programmer, teacher, etc.
+  - Example: You are an expert in the C# language and you are an expert in explaining complex topics in simple terms...
+
+#### Your skill level
+
+- Inform the AI on your skill level to help it know how much detail/how to explain something to you
+  - Example: I am... a total beginner, fairly proficient in this language, etc...
+
+#### Step by Step
+
+- Inform the AI that you'd like it to present its response in a step by step format.
+  - Example: Show me an example of inheritance in C#, step-by-step.
+
+#### Style
+
+- The style and format of the AI's response can be influenced by you
+  - Example: ... Return the result in a table format.
+  - Example: ... Provide 5 example courses on this topic. Bold the course name and provide a one sentence description of each.
+  - Example: In one paragraph, ...
+  - Example: In 30 words, ...
+  - Example: In bullet points, ...
+  - Example: Explain object-oriented programming as a song.
+  - Example: Teach me about ... in the style of a first-person journal entry.
+
+#### Reference
+
+- You can ask the AI to provide a references to its response.
+  - Example: What is the holy grail? Provide references for your response.
+  - Example: What is networking? Provide references to books that will help me learn more about it.
+
 ### General Tips
