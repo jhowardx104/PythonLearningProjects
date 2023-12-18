@@ -4,7 +4,7 @@ from openai import OpenAI, AuthenticationError, BadRequestError
 
 
 class OpenAiService:
-    def __init__(self, api_key, model):
+    def __init__(self, api_key, model='gpt-3.5-turbo'):
         self._api_key = api_key
         self._model = model
         self._messages = []
@@ -28,8 +28,14 @@ class OpenAiService:
         except BadRequestError:
             print("A malformed request was sent to OpenAI")
 
-    def append_message(self, message):
-        self._messages.append(message)
+    def clear_messages(self):
+        self._messages.clear()
+
+    def append_sys_message(self, content):
+        self._messages.append({'role': 'system', 'content': content})
+
+    def append_user_message(self, content):
+        self._messages.append({'role': 'user', 'content': content})
 
     def num_tokens_from_messages(self, model=''):
         if model == '':

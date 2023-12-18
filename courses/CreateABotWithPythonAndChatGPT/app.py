@@ -1,25 +1,15 @@
-from openai import OpenAI, AuthenticationError, BadRequestError
-import json
-import httpx
-import tiktoken
 from open_ai_service import OpenAiService
+from secret_service import get_secrets
 
-enc = tiktoken.encoding_for_model('gpt-3.5-turbo')
+secrets = get_secrets()
 
-# Requires secrets.json file in
-secret_path = './secrets.json'
-
-with open(secret_path) as f:
-    data = json.load(f)
-
+# Construct OpenAI service using gpt-3.5-turbo
 openai_service = OpenAiService(
-    data['openai']['key'],
-    'gpt-3.5-turbo'
+    secrets['openai']['key'],
 )
 
-openai_service.append_message({'role': 'system',
-                               'content': 'you are a CTO mentoring developers, don\'t only provide answers, also ask guiding questions'})
-openai_service.append_message({'role': 'user', 'content': 'Why is my website down?'})
+openai_service.append_sys_message('you are a CTO mentoring developers, don\'t only provide answers, also ask guiding questions')
+openai_service.append_user_message('Why is my website down?')
 
 tokens_for_prompt = openai_service.num_tokens_from_messages()
 print('Tokens for prompt: ', tokens_for_prompt)
