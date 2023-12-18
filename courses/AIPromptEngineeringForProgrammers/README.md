@@ -186,3 +186,22 @@ What file structure should I use for a new angular project?
   - Example: What is networking? Provide references to books that will help me learn more about it.
 
 ### General Tips
+
+#### Context
+
+- The AI only knows as much as you provide.
+- You can fine tune the response by giving it as much info as possible.
+
+#### Give Examples
+
+- If you want it to generate something, providing examples to the AI will help format its output.
+
+#### Summarize
+
+- The AI has a memory of your entire conversation. This allows it to remember things you told it in the past.
+- You can use this to summarize what you've been working on.
+- Example: Based on our conversation, what are 5 key takeaways?
+
+#### Elaborate
+
+- Like in a real conversation, you can ask the AI to elaborate on certain things to dive deeper on a topic.
