@@ -2,7 +2,8 @@ from openai import OpenAI
 import json
 import httpx
 
-secret_path = '../../secrets.json'
+# Requires secrets.json file in
+secret_path = './secrets.json'
 
 with open(secret_path) as f:
     data = json.load(f)
