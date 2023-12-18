@@ -16,11 +16,12 @@ openai_client = OpenAI(
     )
 )
 
-message = {'role': 'user', 'content': 'What is the oldest known dinosaur?'}
-messages = [message]
+messages = []
+messages.append({'role': 'system', 'content': 'you are a CTO mentoring developers, don\'t only provide answers, also ask guiding questions'})
+messages.append({'role': 'user', 'content': 'Why is my website down?'})
 
 response = openai_client.chat.completions.create(model='gpt-3.5-turbo', messages=messages)
 
-print(response)
+print(response.choices[0].message.content)
 
 input()
